@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming website </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Playstation_Img\logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+
+                    <li> <a href=""> Game Controllers</a></li>
+                    <li> <a href="">LJ Accessories </a></li>
+                    <li> <a href=""> Media Remotes </a></li>
+                    <li> <a href=""> Others </a></li>
+
+                </ul>
+            </nav>
+            <img src="Playstation_Img\menu.png" class="menu" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col1">
+                <h2>EGYPT AND <BR> WORLD</h2>
+                <h3> Wireless Controller For Playstation </h3>
+                <p>ITS MORE THAN<BR> GAME'S TO US </p>
+                <h4>$45.60</h4>
+                <button type="button"> Buy Now <img src="Playstation_Img\arrow.png"> </button>
+            </div>
+            <div class="col2">
+                <img src="Playstation_Img\My project.png" class="Remote">
+                <div class="color-box"> </div>
+                <div class="btn">
+                    <img src="Playstation_Img\add.png">
+                    <p><small> Add to cart</small> </p>
+                </div>
+            </div>
+        </div>
+        <div class="social-link">
+            <img src="Playstation_Img\fb.png" >
+            <img src="Playstation_Img\ig.png">
+            <img src="Playstation_Img\tw.png">
+        </div>
+    </div>
+    <script> 
+    var menulist= document.getElementById("menulist");
+
+    menulist.stylet.maxHeight="0px";
+    function togglemenu(){
+        if(menulist.style.maxHeight =="0px")
+        {
+            menulist.style.maxHeight= "130px";
+        }
+        else{
+             menulist.style.maxHeight="0px";
+        }
+    }
+    
+    </script>
+</body>
+
+</html>
